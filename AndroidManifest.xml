@@ -5054,6 +5054,18 @@
                       android:host="com.android.settings.backup.transport" />
             </intent-filter>
         </activity>
+        <!-- ArcLab -->
+        <activity android:name=".Settings$ArcLabActivity"
+            android:label="@string/arc_lab_dash_title"
+            android:icon="@drawable/ic_homepage_arc"
+            android:exported="true"
+            android:parentActivityName="com.android.settings">
+            <intent-filter>
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.arc.lab.ArcLab" />
+        </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>

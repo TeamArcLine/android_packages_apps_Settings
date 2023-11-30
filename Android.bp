@@ -51,15 +51,22 @@ android_library {
         "SpaPrivilegedLib-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+        "ArcLab/src/**/*.java",
+        "ArcLab/src/**/*.kt",
+    ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/shared/**/*.kt",
     ],
     use_resource_processor: true,
+    aaptflags: ["--extra-packages com.arc.lab"],
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "ArcLab/res",
     ],
     static_libs: [
         // External dependencies
@@ -109,6 +116,7 @@ android_library {
         "org.lineageos.platform.internal",
         "LineagePreferenceLib",
         "vendor.lineage.fastcharge-V1.0-java",
+        "kotlin-stdlib",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- ArcLab -->
+     <string name="arc_lab_dash_title">ArcLab</string>
+     <string name="arc_lab_summary">The place where we do experiments</string>
+
+</resources>
